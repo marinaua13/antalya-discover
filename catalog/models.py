@@ -4,6 +4,7 @@ from django.db import models
 
 class Author(AbstractUser):
     years_of_experience = models.IntegerField(default=0, blank=True, null=True)
+    mobile_phone = models.CharField(max_length=20, blank=True, null=True)
 
 
 class Service(models.Model):
